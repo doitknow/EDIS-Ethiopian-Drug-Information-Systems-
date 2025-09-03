@@ -53,6 +53,7 @@ export const useThemeStore = defineStore("themeStore", () => {
   };
 });
 
+
 // Drug Information System Navigation
 export default [
   //  {
@@ -70,11 +71,13 @@ export default [
     name: "Pharmacist Communication",
     icon: icons.pharmacist,
    privilege: ["ROLE_create_answers"],
+   hideFor: ["SuperAdmin"],
        
     path: "/doctor-comm/dashboard",
     name: "Doctor Communication",
     icon: icons.communication, // Add appropriate icon
     privilege: ["ROLE_create_answers"],
+    hideFor: ["SuperAdmin"],
   },
      
       {
@@ -82,6 +85,7 @@ export default [
         name: "Full History",
         icon: icons.history,
         privilege: ["ROLE_create_answers"],
+        hideFor: ["SuperAdmin"],
          
       },
       {
@@ -89,6 +93,7 @@ export default [
         name: "Drug Lookup Tool",
         icon: icons.search,
         privilege: ["ROLE_create_answers"],
+        hideFor: ["SuperAdmin"],
          
       },
   {
@@ -96,12 +101,15 @@ export default [
     name: "Home",
     icon: icons.request,
      privilege: ["ROLE_create_questions"],
+     hideFor: ["SuperAdmin"],
+     
   },
   {
     path: "/doctor-requests",
     name: "Requests",
     icon: icons.requests,
     privilege: ["ROLE_create_questions"],
+    hideFor: ["SuperAdmin"],
   },
   {
     path: "drug-management",
@@ -135,6 +143,7 @@ export default [
     icon: icons.privilege,
    privilege:["ROLE_create_privilege"],
   },
+  
 ];
 
 

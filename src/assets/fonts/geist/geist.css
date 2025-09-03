@@ -60,3 +60,15 @@
 	font-weight: 900; /* Extra Black */
 	font-style: normal;
 }
+@font-face {
+  font-family: 'Digital-7';
+  src: url('/src/assets/fonts/digital-7.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Digital-7';
+  src: url('/src/assets/fonts/digital-7.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
