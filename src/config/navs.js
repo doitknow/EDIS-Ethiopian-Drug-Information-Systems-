@@ -66,6 +66,7 @@ export default [
     name: "Dashboard",
     icon: icons.dashboard,
     privilege: ["ROLE_create_drugs"],
+    hideFor: ["doctor"],
   },
    {
     name: "Pharmacist Communication",
